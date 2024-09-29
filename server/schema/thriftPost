@@ -1,0 +1,41 @@
+const mongoose = require('mongoose');
+
+const thriftPostSchema = new mongoose.Schema({
+body:{
+    type: String,
+    required: true,
+    
+},
+user: {
+    type: String,
+    required: true,
+    default: ""
+  
+},
+
+title: {
+    type: String,
+    default: ""
+  
+},
+
+price: {
+    type: Number,
+    default: 0
+   
+},
+
+contact:
+{
+    type: String,
+    default: ""
+},
+timestamp:
+{
+    type: Number,
+    default: 0
+}
+
+});
+const thriftPost = mongoose.model("ThriftPosts", thriftPostSchema);
+module.exports = thriftPost;

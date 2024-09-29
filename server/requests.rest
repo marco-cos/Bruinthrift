@@ -1,0 +1,15 @@
+###
+
+http://localhost:2000/getPosts
+
+###
+
+http://localhost:2000/createPost
+Content-Type: application/json
+
+{
+    "body": "asdhflsdjf",
+    "user": "Brenna",
+    ""
+}
+
